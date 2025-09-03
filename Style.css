@@ -1,0 +1,245 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background: #0b0d12;
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ff6f61;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background: #ff6f61;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero .btn:hover {
+  background: #e85b50;
+}
+
+/* ===== Categories ===== */
+.categories {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.categories h2 {
+  margin-bottom: 40px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.category-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.category-card h3 {
+  margin-top: 10px;
+}
+
+/* ===== Products ===== */
+.products {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #0b0d12;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product-card button:hover {
+  background: #ff6f61;
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: #0b0d12;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.cta form input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.cta form button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff6f61;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cta form button:hover {
+  background: #e85b50;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #121621;
+  color: #fff;
+  padding: 40px 0 20px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+footer h3, footer h4 {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+  color: #ff6f61;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width:768px){
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #0b0d12;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
